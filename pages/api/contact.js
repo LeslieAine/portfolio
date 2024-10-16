@@ -1,4 +1,4 @@
-import { NextApiRequest, NextApiResponse } from 'next';
+import nodemailer from 'nodemailer'
 
 export default async function handler(req, res) {
     if (req.method === 'POST') {
@@ -6,7 +6,7 @@ export default async function handler(req, res) {
         const to = process.env.MAIL_TO_ADDRESS;
         const body = `From: ${name}<br>E-Mail: ${email}<br>Message:<br>${message}`;
 
-        const nodemailer = require('nodemailer');
+        // const nodemailer = require('nodemailer');
         const transporter = nodemailer.createTransport({
             host: process.env.MAIL_HOST,
             port: process.env.MAIL_PORT,

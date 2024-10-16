@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { BackgroundImages, Header, Navigation, About, Portfolio, Services, Testimonial, Clients, Resume, Blog, Connect, Map } from '@/components'
+import { BackgroundImages, Header, Navigation, About, Portfolio, Services, Testimonial, Resume, Blog, Connect } from '@/components'
 import { mainData } from '@/lib/data'
 
 export default function Home() {
@@ -7,6 +7,7 @@ export default function Home() {
         <>
             <Head>
                 <title>{mainData.websiteTitle}</title>
+                <link rel="icon" href="/favicon.png" /> 
                 <meta name="description" content={mainData.description} />
                 <meta name="keywords" content={mainData.keywords} />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />

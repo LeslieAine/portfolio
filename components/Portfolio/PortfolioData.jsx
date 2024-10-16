@@ -1,4 +1,4 @@
-import PortfolioImg from '@/public/images/portfolio-img.jpg';
+// import PortfolioImg from '@/public/images/portfolio-img.jpg';
 import MainImage from '@/public/images/col-1.jpg';
 
 import beatsPortfolio from '@/public/images/beatsByLa/homepage.png';

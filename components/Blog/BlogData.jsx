@@ -1,4 +1,4 @@
-import PostImage from '@/public/images/blog-post-img.jpg';
+// import PostImage from '@/public/images/blog-post-img.jpg';
 import CubesImage from '@/public/images/cubes.png';
 import DataImage from '@/public/images/data-fetching.png';
 import Image from '@/public/images/col-1.jpg';

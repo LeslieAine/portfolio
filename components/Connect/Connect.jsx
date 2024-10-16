@@ -1,32 +1,34 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import React, { useState } from 'react';
 import { connectData } from './ConnectData';
 
 const Connect = () => {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: '',
-        subject: '',
-    });
+    // const [formData, setFormData] = useState({
+    //     name: '',
+    //     email: '',
+    //     message: '',
+    //     subject: '',
+    // });
 
-    const [submitStatus, setSubmitStatus] = useState(null);
+    // const [submitStatus, setSubmitStatus] = useState(null);
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        const response = await fetch('/api/contact', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData),
-        });
+    // const handleSubmit = async (e) => {
+    //     e.preventDefault();
+    //     const response = await fetch('/api/contact', {
+    //         method: 'POST',
+    //         headers: {
+    //             'Content-Type': 'application/json',
+    //         },
+    //         body: JSON.stringify(formData),
+    //     });
 
-        if (response.status === 200) {
-            setSubmitStatus('success');
-        } else {
-            setSubmitStatus('error');
-        }
-    };
+    //     if (response.status === 200) {
+    //         setSubmitStatus('success');
+    //     } else {
+    //         setSubmitStatus('error');
+    //     }
+    // };
 
     return (
         <div className="section-box mt-4" id="contact">
@@ -49,7 +51,7 @@ const Connect = () => {
             <div className="mt-4 mt-lg-5">
                 {/* Contact Form */}
                 <div className="contact-form">
-                    <form method="post" id="contactform" onSubmit={handleSubmit}>
+                    <form method="POST" id="contactform" action="https://formspree.io/f/mdorkqbv">
                         <div className="row gx-3 gy-0">
                             <div className="col-12 col-md-6">
                                 <input type="text" id="name" name="name" placeholder="Name" required />
@@ -63,14 +65,14 @@ const Connect = () => {
                         <button className="button button-md button-dark" type="submit">Send Message</button>
                     </form>
                     {/* Submit result */}
-                    <div className="submit-result">
+                    {/* <div className="submit-result">
                         {submitStatus === 'success' && (
                             <span id="success">Thank you! Your Message has been sent.</span>
                         )}
                         {submitStatus === 'error' && (
                             <span id="error">Something went wrong. Please try again!</span>
                         )}
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

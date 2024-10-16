@@ -6,16 +6,15 @@ import {
   Lightbox,
 } from "@/components";
 import Head from "next/head";
-import dynamic from "next/dynamic";
 import { blogData } from "@/components/Blog/BlogData";
 import Image from "next/image";
 
 const PostPage = ({ post }) => {
   const [lightboxImage, setLightboxImage] = useState(null);
 
-  const openLightbox = (image) => {
-    setLightboxImage(image);
-  };
+//   const openLightbox = (image) => {
+//     setLightboxImage(image);
+//   };
 
   const closeLightbox = () => {
     setLightboxImage(null);
