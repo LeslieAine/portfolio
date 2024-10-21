@@ -38,7 +38,7 @@ export const blogData = {
             date: 'Sept 4 2024',
             postedBy: 'Leslie Aine',
             image: DataImage,
-            content: '<div class="row g-4 mt-2"><div class="col-12"> <h4 class="fw-medium">Dynamic Routes in NextJS</h4> <p>In this article, I dive in with examples to illustrate how one can create a site using a dynamic route that fetches data from an API endpoint in a case where this endpoint is dictated by the dynamic route&apos:s URL. This is paricularly helpful when the general outlook of several pages is the same but they fetch from different endpoints. </p> </div></div>',
+            content: '<div class="row g-4 mt-2"><div class="col-12"> <h4 class="fw-medium">Dynamic Routes in NextJS</h4> <p>In this article, I dive in with examples to illustrate how one can create a site using a dynamic route that fetches data from an API endpoint in a case where this endpoint is dictated by the dynamic route&apos;s URL. This is paricularly helpful when the general outlook of several pages is the same but they fetch from different endpoints. </p> </div></div>',
             images: [
                 { image: Image },
                 { image: Image },
