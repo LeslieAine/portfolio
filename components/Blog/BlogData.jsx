@@ -48,6 +48,25 @@ export const blogData = {
                 name: 'View the entire blog here' },
 
         },
+        {
+            title: 'The Fast Fourier Transform Algorithm',
+            slug: 'algorithms',
+            description: 'This article explains the genius and breaks down how the Fast Fourier Transform works and why it is considered the most important of our time',
+            keywords: 'key1, key2, key3',
+            category: 'Algorithms',
+            date: 'Oct 29 2024',
+            postedBy: 'Leslie Aine',
+            image: DataImage,
+            content: '<div class="row g-4 mt-2"><div class="col-12"> <h4 class="fw-medium">The Fast Fourier Transform</h4> <p>Famously called the most ingenious algorithm of all time, in this article, I break down the Fast Fourier Transform Algorithm, its origin, modifications, and its importance to our technology today.  </p> </div></div>',
+            images: [
+                { image: Image },
+                { image: Image },
+            ],
+            tags: 
+                { url: 'https://medium.com/@aineleslie/the-genius-of-the-fast-fourier-transform-agorithm-fb0ed48ab1ed',
+                name: 'View the entire blog here' },
+
+        },
     ],
 
 };
