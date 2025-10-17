@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nlpjs/core": "^5.0.0-alpha.5",
+    "@nlpjs/lang-en": "^5.0.0-alpha.5",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "next": "14.2.13",
